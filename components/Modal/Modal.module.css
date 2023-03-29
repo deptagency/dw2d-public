@@ -1,0 +1,60 @@
+.root {
+  @apply relative z-50;
+}
+
+.overlay {
+  @apply fixed inset-0 bg-black/40;
+}
+
+.scrollWrapper {
+  @apply fixed inset-0 overflow-y-auto;
+}
+
+.modalContainer {
+  @apply flex items-center justify-center min-h-full p-4;
+}
+
+.modalPanel {
+  @apply w-full max-w-sm bg-white min-h-[50vh] min-w-[75%] flex flex-col;
+  @apply lg:min-w-[640px];
+}
+
+.title {
+  @apply px-8 py-4 font-bold text-center border border-b text-[12px];
+  @apply md:text-[14px];
+}
+
+.body {
+  @apply flex flex-col justify-between px-8 py-4 text-[10px] leading-5 text-left text-gray-700 grow;
+  @apply md:text-[12px];
+}
+
+.body p {
+  @apply mb-4;
+}
+
+.body span[classname='highlight'] {
+  @apply text-orange-700;
+}
+
+.body p[classname='reply'] {
+  @apply py-3 pl-6 text-gray-400 border-y;
+}
+
+.actions {
+  @apply my-3 text-[10px];
+  @apply md:text-[12px];
+}
+
+.actions button {
+  @apply relative block pl-5 mt-2 leading-loose text-left text-gray-400;
+}
+
+.actions button:focus {
+  @apply font-bold text-orange-700 outline-none;
+}
+.actions button:focus:before {
+  content: '»';
+  position: absolute;
+  left: 0;
+}

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  @apply relative max-w-full overflow-x-hidden bg-[#646464];
+}
+
+#game-content {
+  position: relative;
+  margin: 0 auto;
+}
